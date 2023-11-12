@@ -23,6 +23,7 @@
 							<td width="100px"><b>Umur Petugas</b></td>
 							<td width="100px"><b>Jenis Kelamin Petugas</b></td>
 							<td width="100px"><b>No Hp Petugas</b></td>
+							<td width="100px"><b>Aksi</b></td>
 						</tr>
 						<?php
 
@@ -38,6 +39,10 @@
 								<td><?php echo $data['umur']; ?></td>
 								<td><?php echo $data['sex']; ?></td>
 								<td><?php echo $data['no_hp']; ?></td>
+								<td>
+									<a href="edit.php?id_petugas=<?php echo $data['id_petugas']; ?>" class="btn btn-warning" btn-sm>Edit</a>
+									<a href="delete.php?id_petugas=<?php echo $data['id_petugas']; ?>" class="btn btn-danger" btn-sm>Delete</a>
+								</td>
 							</tr>
 						<?php } ?>
 				</table>	
